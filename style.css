@@ -1,0 +1,30 @@
+body {
+  padding: 30px 30px;
+}
+
+img {
+  height: 100px;
+}
+
+.menu {
+  background: black;
+  height: 200px;
+  width: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  top: 30%;
+  left: -90px;
+  transition: transform 500ms ease;
+}
+
+.menu.visible {
+  transform: translate(90px);
+}
+
+.menu > button {
+  width: 80px;
+}
